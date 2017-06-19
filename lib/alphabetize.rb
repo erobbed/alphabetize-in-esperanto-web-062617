@@ -1,3 +1,8 @@
+require "pry"
+
 def alphabetize(arr)
-  # code here
+  esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  alpha = "@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\"
+  #translate for esperanto to alpha:
+  arr.sort_by{|word| word.tr(esperanto, alpha)}
 end
